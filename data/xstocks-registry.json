@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-06-20",
+  "sourceNote": "Mantle contract addresses sourced from CoinGecko per-token pages on 2026-06-20. They are byte-identical to the Ethereum deployment (Backed multichain mint). NOT independently click-verified on mantlescan.xyz at registry creation time — mantlescan returns HTTP 403 to bot user agents. Verify in a browser before publishing any report that references these addresses.",
+  "issuer": {
+    "name": "Backed Assets (JE) Limited",
+    "brand": "xStocks",
+    "site": "https://xstocks.com"
+  },
+  "assets": [
+    {
+      "symbol": "TSLAx",
+      "name": "Tesla xStock",
+      "underlying": "TSLA",
+      "underlyingISIN": "US88160R1014",
+      "referenceSource": "yahoo:TSLA",
+      "mantleContract": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+      "decimals": 18,
+      "coingeckoSlug": "tesla-xstock"
+    },
+    {
+      "symbol": "NVDAx",
+      "name": "NVIDIA xStock",
+      "underlying": "NVDA",
+      "referenceSource": "yahoo:NVDA",
+      "mantleContract": "0xc845b2894dBddd03858fd2D643B4eF725fE0849d",
+      "decimals": 18,
+      "coingeckoSlug": "nvidia-xstock"
+    },
+    {
+      "symbol": "AAPLx",
+      "name": "Apple xStock",
+      "underlying": "AAPL",
+      "referenceSource": "yahoo:AAPL",
+      "mantleContract": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+      "decimals": 18,
+      "coingeckoSlug": "apple-xstock"
+    },
+    {
+      "symbol": "MSFTx",
+      "name": "Microsoft xStock",
+      "underlying": "MSFT",
+      "referenceSource": "yahoo:MSFT",
+      "mantleContract": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+      "decimals": 18,
+      "coingeckoSlug": "microsoft-xstock"
+    },
+    {
+      "symbol": "METAx",
+      "name": "Meta xStock",
+      "underlying": "META",
+      "referenceSource": "yahoo:META",
+      "mantleContract": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+      "decimals": 18,
+      "coingeckoSlug": "meta-xstock"
+    },
+    {
+      "symbol": "AMZNx",
+      "name": "Amazon xStock",
+      "underlying": "AMZN",
+      "referenceSource": "yahoo:AMZN",
+      "mantleContract": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+      "decimals": 18,
+      "coingeckoSlug": "amazon-xstock"
+    },
+    {
+      "symbol": "SPCXx",
+      "name": "SpaceX xStock",
+      "underlying": "SPACEX (private)",
+      "referenceSource": "none",
+      "referenceNote": "SpaceX is a private company; no public ticker. Reference drift returns N/A by design — this is itself a distribution-friction signal.",
+      "mantleContract": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+      "decimals": 18,
+      "coingeckoSlug": "spacex-xstock"
+    }
+  ]
+}

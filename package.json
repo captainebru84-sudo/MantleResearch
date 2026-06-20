@@ -1,0 +1,28 @@
+{
+  "name": "mantle-distribution-friction",
+  "version": "0.1.0",
+  "description": "Measures distribution friction for tokenized RWAs on Mantle — venues, depth, spread, reference drift, holder concentration — with ERC-8004 attestation.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "friction": "node --env-file-if-exists=.env --import tsx src/cli.ts",
+    "demo": "node --env-file-if-exists=.env --import tsx scripts/demo.ts",
+    "attest-live": "node --env-file-if-exists=.env --import tsx scripts/attest-live.ts",
+    "render": "node --import tsx scripts/render.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

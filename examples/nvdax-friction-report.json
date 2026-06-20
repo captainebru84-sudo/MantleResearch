@@ -1,0 +1,60 @@
+{
+  "skill": "mantle-distribution-friction",
+  "version": "0.1.0",
+  "asset": {
+    "symbol": "NVDAx",
+    "name": "NVIDIA xStock",
+    "issuer": "Backed Assets (JE) Limited",
+    "chain": "Mantle",
+    "contract": "0xc845b2894dBddd03858fd2D643B4eF725fE0849d"
+  },
+  "measuredAt": "2026-06-20T15:10:17.883Z",
+  "metrics": {
+    "venueCount": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "GeckoTerminal https://api.geckoterminal.com/api/v2/search/pools?query=NVDAx&network=mantle → 0 pool(s)"
+    },
+    "depthUsd": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "sum reserve_in_usd across 0 Mantle pool(s) = $0.00"
+    },
+    "spreadBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools — no orderbook to derive spread from"
+    },
+    "referenceDriftBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools → no Mantle mid-price to compare against underlying NVDA = $210.69 (https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=5d)"
+    },
+    "concentrationPct": {
+      "value": 81.25,
+      "score": "SHALLOW",
+      "evidence": "top-7 hold 81.25% of 10008.8718 total supply (7 positive-balance addresses); scanned blocks 96718947-96918947 (recent window only — pass --from-block 0 for full history)"
+    }
+  },
+  "crossChainContext": {
+    "solana": {
+      "venues": 0,
+      "tvlUsd": 506021469.42264,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    },
+    "arbitrum": {
+      "venues": 0,
+      "tvlUsd": 214.5609,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    }
+  },
+  "verdict": "THIN",
+  "verdictReason": "2 THIN / 1 SHALLOW / 0 DEEP (2 N/A) — venueCount=THIN, depthUsd=THIN, spreadBps=N/A, referenceDriftBps=N/A, concentrationPct=SHALLOW",
+  "attestation": {
+    "chainId": 5000,
+    "agentId": 136,
+    "reportHash": "0x17f9133628437fb07032ebcc5e341ea4d39aa0556fb332002460ced3d7fc4947",
+    "txHash": "0x484d0c29fceb93df0d42678b4317d2e19fbf0c530dae3b277f52c20dae3f4798",
+    "explorerUrl": "https://mantlescan.xyz/tx/0x484d0c29fceb93df0d42678b4317d2e19fbf0c530dae3b277f52c20dae3f4798"
+  }
+}

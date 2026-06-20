@@ -1,0 +1,60 @@
+{
+  "skill": "mantle-distribution-friction",
+  "version": "0.1.0",
+  "asset": {
+    "symbol": "TSLAx",
+    "name": "Tesla xStock",
+    "issuer": "Backed Assets (JE) Limited",
+    "chain": "Mantle",
+    "contract": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0"
+  },
+  "measuredAt": "2026-06-20T15:15:48.013Z",
+  "metrics": {
+    "venueCount": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "GeckoTerminal https://api.geckoterminal.com/api/v2/search/pools?query=TSLAx&network=mantle → 0 pool(s)"
+    },
+    "depthUsd": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "sum reserve_in_usd across 0 Mantle pool(s) = $0.00"
+    },
+    "spreadBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools — no orderbook to derive spread from"
+    },
+    "referenceDriftBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools → no Mantle mid-price to compare against underlying TSLA = $400.49 (https://query1.finance.yahoo.com/v8/finance/chart/TSLA?interval=1d&range=5d)"
+    },
+    "concentrationPct": {
+      "value": 5.7,
+      "score": "DEEP",
+      "evidence": "top-3 hold 5.70% of 10000.0000 total supply (3 positive-balance addresses); scanned blocks 96719112-96919112 (recent window only — pass --from-block 0 for full history)"
+    }
+  },
+  "crossChainContext": {
+    "solana": {
+      "venues": 0,
+      "tvlUsd": 506021469.42264,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    },
+    "arbitrum": {
+      "venues": 0,
+      "tvlUsd": 214.5609,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    }
+  },
+  "verdict": "THIN",
+  "verdictReason": "2 THIN / 0 SHALLOW / 1 DEEP (2 N/A) — venueCount=THIN, depthUsd=THIN, spreadBps=N/A, referenceDriftBps=N/A, concentrationPct=DEEP",
+  "attestation": {
+    "chainId": 5000,
+    "agentId": 136,
+    "reportHash": "0xe681adde36112a03868293a253331fdd64e5d5ac59dfec5bf8ccdb876a4c7751",
+    "txHash": "0x56734b2656e41b14a25634ed430464010527d8ead7344ddab8d37f3ae3703a55",
+    "explorerUrl": "https://mantlescan.xyz/tx/0x56734b2656e41b14a25634ed430464010527d8ead7344ddab8d37f3ae3703a55"
+  }
+}

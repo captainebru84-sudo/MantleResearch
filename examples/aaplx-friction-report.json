@@ -1,0 +1,60 @@
+{
+  "skill": "mantle-distribution-friction",
+  "version": "0.1.0",
+  "asset": {
+    "symbol": "AAPLx",
+    "name": "Apple xStock",
+    "issuer": "Backed Assets (JE) Limited",
+    "chain": "Mantle",
+    "contract": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+  },
+  "measuredAt": "2026-06-20T15:16:10.484Z",
+  "metrics": {
+    "venueCount": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "GeckoTerminal https://api.geckoterminal.com/api/v2/search/pools?query=AAPLx&network=mantle → 0 pool(s)"
+    },
+    "depthUsd": {
+      "value": 0,
+      "score": "THIN",
+      "evidence": "sum reserve_in_usd across 0 Mantle pool(s) = $0.00"
+    },
+    "spreadBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools — no orderbook to derive spread from"
+    },
+    "referenceDriftBps": {
+      "value": null,
+      "score": "N/A",
+      "evidence": "no Mantle pools → no Mantle mid-price to compare against underlying AAPL = $298.01 (https://query1.finance.yahoo.com/v8/finance/chart/AAPL?interval=1d&range=5d)"
+    },
+    "concentrationPct": {
+      "value": 93.06,
+      "score": "THIN",
+      "evidence": "top-8 hold 93.06% of 10012.6895 total supply (8 positive-balance addresses); scanned blocks 96719122-96919122 (recent window only — pass --from-block 0 for full history)"
+    }
+  },
+  "crossChainContext": {
+    "solana": {
+      "venues": 0,
+      "tvlUsd": 506021469.42264,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    },
+    "arbitrum": {
+      "venues": 0,
+      "tvlUsd": 214.5609,
+      "source": "https://api.llama.fi/protocol/xstocks"
+    }
+  },
+  "verdict": "THIN",
+  "verdictReason": "3 THIN / 0 SHALLOW / 0 DEEP (2 N/A) — venueCount=THIN, depthUsd=THIN, spreadBps=N/A, referenceDriftBps=N/A, concentrationPct=THIN",
+  "attestation": {
+    "chainId": 5000,
+    "agentId": 136,
+    "reportHash": "0x6c981ca6f2ef92ed189a0b3abd4c135facb0e5c1d5a9587082cbde97daff268d",
+    "txHash": "0xff2797204224b8627fc6796f3df5b339ff7258e3719762e0fbeef0183f146702",
+    "explorerUrl": "https://mantlescan.xyz/tx/0xff2797204224b8627fc6796f3df5b339ff7258e3719762e0fbeef0183f146702"
+  }
+}
