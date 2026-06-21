@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mantle Distribution Friction — 7/7 xStocks = THIN</title>
+  <meta name="description" content="Tokenized assets are solved — distribution isn't. Hard-data friction reports for every Backed xStock on Mantle, anchored onchain as agent 136." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <p class="kicker">Mantle Research Challenge · Track 2</p>
+    <h1>Distribution Friction Skill</h1>
+    <p class="lede">
+      Mantle says tokenized assets are solved &mdash; distribution isn't.
+      Here's the hard data on Mantle's own RWA flagship.
+    </p>
+
+    <p class="headline">
+      7 / 7 Backed xStocks on Mantle = <span class="badge badge-thin">THIN</span>
+    </p>
+    <p class="sub">
+      8 mainnet transactions. 1 registration + 7 attestations.
+      Every report anchored onchain as agent 136.
+    </p>
+
+    <div class="chips">
+      <a class="chip" href="https://mantlescan.xyz/address/0x9c0bD9b60ea840347b2731Aa630D387BbD56E075" target="_blank" rel="noopener">
+        <span class="chip-key">agent 136</span>
+        <span class="chip-val">0x9c0b&hellip;E075</span>
+      </a>
+      <a class="chip" href="https://mantlescan.xyz/address/0x8004A169FB4a3325136EB29fA0ceB6D2e539a432" target="_blank" rel="noopener">
+        <span class="chip-key">Identity Registry</span>
+        <span class="chip-val">0x8004&hellip;A432</span>
+      </a>
+      <a class="chip" href="https://mantlescan.xyz/address/0x8004Cc8439f36fd5F9F049D9fF86523Df6dAAB58" target="_blank" rel="noopener">
+        <span class="chip-key">Validation Registry</span>
+        <span class="chip-val">0x8004&hellip;AB58</span>
+      </a>
+      <a class="chip" href="https://github.com/captainebru84-sudo/MantleResearch" target="_blank" rel="noopener">
+        <span class="chip-key">repo</span>
+        <span class="chip-val">captainebru84-sudo/MantleResearch</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="live">
+    <h2>Try any Mantle ERC-20</h2>
+    <p class="live-help">
+      Enter one of the 7 xStock tickers, or any Mantle ERC-20 contract address.
+      The same code path that produced the attested reports below runs live and returns a fresh friction verdict.
+    </p>
+    <form id="live-form" autocomplete="off">
+      <input
+        id="live-input"
+        name="query"
+        type="text"
+        placeholder="TSLAx  &mdash;or&mdash;  0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0"
+        spellcheck="false"
+        required
+      />
+      <button id="run-btn" type="submit">Run</button>
+    </form>
+    <div id="live-error" class="error-banner" hidden></div>
+    <div id="live-result"></div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Attested reports</h2>
+    <p class="gallery-sub">
+      All 7 Backed-issued xStocks on Mantle. Each report's keccak256 hash is anchored to the ERC-8004 Validation Registry on Mantle mainnet.
+    </p>
+    <div id="gallery" class="gallery">
+      <p class="loading">Loading attested reports&hellip;</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Built for the Mantle Research Challenge by
+      <a href="https://github.com/captainebru84-sudo" target="_blank" rel="noopener">captainebru84-sudo</a>.
+      Skill spec: <a href="https://github.com/captainebru84-sudo/MantleResearch/blob/main/SKILL.md" target="_blank" rel="noopener">SKILL.md</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

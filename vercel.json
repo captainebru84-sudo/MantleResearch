@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node scripts/build-dashboard.mjs",
+  "outputDirectory": "dashboard",
+  "functions": {
+    "api/friction.ts": {
+      "maxDuration": 30,
+      "includeFiles": "data/**"
+    }
+  }
+}
